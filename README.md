@@ -1,19 +1,19 @@
 ## Table of Contents
 
 - [Problem Statement and Project Idea](README.md#problem-statement-and-project-idea) 
-- [Application Features](#application-features)
-- [Technology Stack](#technology-stack)
-- [How to Run Locally](#how-to-run-locally)
-- [Deployment Process](#deployment-process)
-- [Web Infrastructure Overview](#web-infrastructure-overview)
-- [Design Decisions and Assumptions](#design-decisions-and-assumptions)
-- [Security and Privacy](#security-and-privacy)
-- [Browser Compatibility](#browser-compatibility)
-- [Known Issues and Limitations](#known-issues-and-limitations)
-- [Project Structure](#project-structure)
-- [Learning Outcomes](#learning-outcomes)
-- [Author](#author)
-- [License](#license)
+- [Application Features](README.md#application-features)
+- [Technology Stack](README.md#technology-stack)
+- [How to Run Locally](README.md#how-to-run-locally)
+- [Deployment Process](README.md#deployment-process)
+- [Web Infrastructure Overview](README.md#web-infrastructure-overview)
+- [Design Decisions and Assumptions](README.md#design-decisions-and-assumptions)
+- [Security and Privacy](README.md#security-and-privacy)
+- [Browser Compatibility](README.md#browser-compatibility)
+- [Known Issues and Limitations](README.md#known-issues-and-limitations)
+- [Project Structure](README.md#project-structure)
+- [Learning Outcomes](README.md#learning-outcomes)
+- [Author](README.md#author)
+- [License](README.md#license)
 
 # 📋 TaskFlow - Modern Task Management Application
 ## Problem Statement and Project Idea
