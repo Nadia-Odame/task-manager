@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A modern, lightweight task management application for organizing your daily tasks efficiently">
+    <meta name="author" content="Web Infrastructure Project">
+    <title>TaskFlow - Smart Task Management</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✓</text></svg>">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main Container -->
+    <div class="container">
+        
+        <!-- Header Section -->
+        <header class="header">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="logo-icon">✓</div>
+                    <h1 class="app-title">TaskFlow</h1>
+                </div>
+                <p class="app-subtitle">Streamline your productivity, one task at a time</p>
+            </div>
+            
+            <!-- Stats Bar -->
+            <div class="stats-bar">
+                <div class="stat-item">
+                    <span class="stat-label">Total</span>
+                    <span class="stat-value" id="total-tasks">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Active</span>
+                    <span class="stat-value" id="active-tasks">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Completed</span>
+                    <span class="stat-value" id="completed-tasks">0</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            
+            <!-- Task Input Section -->
+            <section class="task-input-section" aria-label="Add new task">
+                <form id="task-form" class="task-form">
+                    <div class="input-wrapper">
+                        <input 
+                            type="text" 
+                            id="task-input" 
+                            class="task-input" 
+                            placeholder="What needs to be done today?"
+                            aria-label="Enter new task"
+                            autocomplete="off"
+                            required
+                        >
+                        <button type="submit" class="add-button" aria-label="Add task">
+                            <span class="button-text">Add Task</span>
+                            <span class="button-icon">+</span>
+                        </button>
+                    </div>
+                </form>
+            </section>
+
+            <!-- Filter Tabs -->
+            <section class="filter-section" aria-label="Filter tasks">
+                <div class="filter-tabs">
+                    <button class="filter-tab active" data-filter="all" aria-pressed="true">
+                        All Tasks
+                    </button>
+                    <button class="filter-tab" data-filter="active" aria-pressed="false">
+                        Active
+                    </button>
+                    <button class="filter-tab" data-filter="completed" aria-pressed="false">
+                        Completed
+                    </button>
+                </div>
+            </section>
+
+            <!-- Task List Section -->
+            <section class="task-list-section" aria-label="Task list">
+                <!-- Empty State -->
+                <div class="empty-state" id="empty-state">
+                    <div class="empty-icon">📋</div>
+                    <h2 class="empty-title">No tasks yet</h2>
+                    <p class="empty-description">Add your first task above to get started with TaskFlow</p>
+                </div>
+
+                <!-- Task List -->
+                <ul class="task-list" id="task-list" role="list">
+                    <!-- Tasks will be dynamically inserted here -->
+                </ul>
+            </section>
+
+            <!-- Action Bar (Clear Completed) -->
+            <section class="action-bar" id="action-bar">
+                <button class="clear-button" id="clear-completed" aria-label="Clear all completed tasks">
+                    <span class="clear-icon">🗑️</span>
+                    <span class="clear-text">Clear Completed</span>
+                </button>
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p class="footer-text">
+                Built with HTML, CSS, and JavaScript • 
+                <a href="https://github.com/yourusername/taskflow" target="_blank" rel="noopener noreferrer" class="footer-link">
+                    View on GitHub
+                </a>
+            </p>
+            <p class="footer-subtitle">Web Infrastructure Summative Project 2026</p>
+        </footer>
+
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast" role="alert" aria-live="polite"></div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
