@@ -200,7 +200,7 @@ Select folder: / (root)
 Click "Save"
 3. Access Live Application
 After deployment (usually takes 1-2 minutes):
-Your site will be available at: https://yourusername.github.io/taskflow/
+Your site will be available at: https://nadia-odame.github.io/taskflow
 GitHub will provide the exact URL in the Pages settings
 Alternative Deployment Options
 Netlify (Alternative)
