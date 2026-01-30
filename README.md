@@ -16,7 +16,7 @@
 - [License](README.md#license)
 
 # 📋 TaskFlow - Modern Task Management Application
-Live Demo: https://nadia-odame.github.io/taskflow/
+Live Demo: https://nadia-odame.github.io/task-manager/
 ## Problem Statement and Project Idea
 The Challenge
 In today's fast-paced world, individuals struggle to organize their daily tasks efficiently. Many existing task management solutions are either too complex for simple needs or lack the intuitive design required for quick adoption. Students, professionals, and anyone managing multiple responsibilities need a straightforward, accessible tool to track their tasks without the overhead of complicated project management systems.
