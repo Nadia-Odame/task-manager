@@ -224,7 +224,7 @@ Infrastructure Diagram
 
 [1] User Types URL
     │
-    │  https://yourusername.github.io/taskflow/
+    │  https://nadia-odame.github.io/task-manager/
     │
     ▼
 [2] Browser Initiates DNS Lookup
@@ -239,8 +239,8 @@ Infrastructure Diagram
     ▼
 [4] Browser Sends HTTP Request
     │
-    │  GET /taskflow/index.html HTTP/1.1
-    │  Host: yourusername.github.io
+    │  GET /task-manager/index.html HTTP/1.1
+    │  Host: nadia-odame.github.io
     │
     ▼
 [5] GitHub Pages Web Server
@@ -267,10 +267,10 @@ Infrastructure Diagram
     ▼
 [8] Browser Requests Additional Resources
     │
-    ├─→ GET /taskflow/style.css
+    ├─→ GET /task-manager/style.css
     │   └─→ Server responds with CSS
     │
-    └─→ GET /taskflow/script.js
+    └─→ GET /task-manager/script.js
         └─→ Server responds with JavaScript
     │
     ▼
@@ -503,7 +503,7 @@ Single Browser: Tasks don't transfer between browsers
 No Search: Large task lists may be hard to navigate
 
 ## Project Structure
-taskflow/
+task-manager/
 ├── index.html          # Main HTML file (structure)
 ├── style.css           # Stylesheet (presentation)
 ├── script.js           # JavaScript logic (behavior)
