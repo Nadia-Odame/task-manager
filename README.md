@@ -292,7 +292,7 @@ Executes JavaScript code
 Manages user interactions
 Handles HTTP/HTTPS communications
 2. Domain Name System (DNS)
-When a user types https://Nadia-Odame.github.io/taskflow/:
+When a user types https://Nadia-Odame.github.io/task-manager/:
 Step 1: DNS Query
 Browser doesn't initially know the server's IP address
 Sends query to DNS resolver (usually provided by ISP)
@@ -308,8 +308,8 @@ Enables server infrastructure changes without affecting user access
 3. HTTP/HTTPS Protocol
 The browser communicates with the server using HTTP (HyperText Transfer Protocol):
 Request Structure:
-GET /taskflow/index.html HTTP/1.1
-Host: yourusername.github.io
+GET /task-manager/index.html HTTP/1.1
+Host: nadia-odame.github.io
 User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 Accept: text/html,application/xhtml+xml
 Accept-Language: en-US,en;q=0.9
