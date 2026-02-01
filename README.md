@@ -129,7 +129,7 @@ Option 1: Direct File Opening
 Download the Repository
 
 1.  git clone https://github.com/Nadia-Odame/task-manager.git
-cd taskflow
+cd task-manager
 2. Open in Browser
 
 
@@ -149,7 +149,7 @@ The application will automatically open at http://localhost:5500
 Option 3: Using Python HTTP Server
 Navigate to Project Directory
 
- cd taskflow
+ cd task-manager
 
 
 Start Server
@@ -217,14 +217,15 @@ Deploy
 ## Web Infrastructure Overview
 Understanding How TaskFlow Reaches Users
 TaskFlow operates on a fundamental web infrastructure model that demonstrates core concepts of how websites are delivered over the internet.
-Infrastructure Diagram
+### Infrastructure Diagram
+```
 ┌─────────────────────────────────────────────────────────────────────┐
 │                         USER REQUEST FLOW                           │
 └─────────────────────────────────────────────────────────────────────┘
-
+ 
 [1] User Types URL
     │
-    │  https://nadia-odame.github.io/task-manager/
+    │  https://Nadia-Odame.github.io/task-manager/
     │
     ▼
 [2] Browser Initiates DNS Lookup
@@ -240,7 +241,7 @@ Infrastructure Diagram
 [4] Browser Sends HTTP Request
     │
     │  GET /task-manager/index.html HTTP/1.1
-    │  Host: nadia-odame.github.io
+    │  Host: Nadia-Odame.github.io
     │
     ▼
 [5] GitHub Pages Web Server
@@ -282,6 +283,7 @@ Infrastructure Diagram
     │
     ▼
 [10] User Interacts with Application
+```
 
 Detailed Infrastructure Components
 1. User & Browser
@@ -501,14 +503,15 @@ Storage Limit: localStorage has 5-10MB limit
 No Backup: Data loss if localStorage is cleared
 Single Browser: Tasks don't transfer between browsers
 No Search: Large task lists may be hard to navigate
-
 ## Project Structure
+ 
+```
 task-manager/
 ├── index.html          # Main HTML file (structure)
 ├── style.css           # Stylesheet (presentation)
 ├── script.js           # JavaScript logic (behavior)
 └── README.md           # Documentation
-
+```
 Code Organization
 HTML: Semantic, accessible markup with ARIA labels
 CSS: Modular sections with clear comments
